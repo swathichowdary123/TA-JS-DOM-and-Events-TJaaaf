@@ -1,17 +1,16 @@
-for(let i=1;i<=12;i++){
-    document.querySelector(`#box1.small-box:nth-child(${i})`).addEventListener('click',function(){
-        alert(`clicked on box ${i}`);
+let firstBoxes=document.querySelectorAll(".firstli");
+firstBoxes.forEach((box,index)=>{
+    box.addEventListener("click",(event)=>{
+        event.target.innerText=index+1;
         setTimeout(()=>{
-            alert(`number ${i} disappered`);
-        },5000)
-    });
-}
-document.getElementById('box2').addEventListener('click',function(event){
-    if(event.target.classList.contains('small-box')){
-        let clickedNumber=event.target.textContent;
-        alert(`clicked on box ${clickedNumber}`);
-        setTimeout(()=>{
-            alert(`number ${clickedNumber} disappeared`);
+            event.target.innerText="";
         },5000);
-    }
+    });
+});
+secondBox.addEventListener("click",(event)=>{
+    let text=event.target.dataset.text;
+    event.target.innerText=text;
+    setTimeout(()=>{
+        event.target.innerText="";
+    },5000);
 });
