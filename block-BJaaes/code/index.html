@@ -9,15 +9,36 @@
   <body>
    <form>
     <div class="form-control">
-      <label for="text" name="username" placeholder="">
+      <label for="username">username</label> 
+        <input id="username" type="text" name="username" placeholder="arya"/>
         <small></small>
-      </label>
-    </div>
-    <div class="form-control-success">
-      <label for="text">name</label>
-      <input type="text" name="name" placeholder="">
-      <small>name cant be numbers</small>
-    </div>
+      </div>
+      <div class="form-control">
+        <label for="name">Name</label> 
+          <input id="name" type="text" name="name" placeholder="arya stark"/>
+          <small></small>
+        </div>  
+        <div class="form-control">
+          <label for="email">email</label> 
+            <input id="email" type="email" name="email" placeholder="arya@stark.com"/>
+            <small></small>
+          </div> 
+          <div class="form-control">
+            <label for="phone">phone Number</label> 
+              <input id="phone" type="tel" name="phone" placeholder="enter your password"/>
+              <small></small>
+            </div>  
+            <div class="form-control">
+              <label for="pass">password</label> 
+                <input id="password" type="password"  placeholder="enter your password"/>
+                <small></small>
+              </div> 
+              <div class="form-control success">
+                <label for="pass-check">confirm password</label> 
+                  <input id="pass-check" type="password" name="password-check" placeholder="confirm-password"/>
+                  <small></small>
+                </div>
+                <button type="submit">submit</button>   
    </form>
     <script src="./script.js"></script>
   </body>
